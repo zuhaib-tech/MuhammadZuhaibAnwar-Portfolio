@@ -1,6 +1,11 @@
-# Backend (Express)
+# Backend (Express) — Deprecated (Not used on Vercel)
 
-This folder contains a minimal Express backend with a `POST /api/contact` endpoint.
+This repo is deployed to Vercel as a **Next.js-only** application.
+
+The contact form backend logic is implemented in **Next.js** via:
+- `pages/api/contact.js`
+
+The Express backend in this folder is kept only for optional local/Docker setups and is **not required** for Vercel deployment.
 
 ## Run locally
 
@@ -10,7 +15,7 @@ npm install
 npm run dev
 ```
 
-The backend listens on `PORT` and exposes:
+If you still run it locally, the backend listens on `PORT` and exposes:
 
 - `GET /api/health` — health check
 - `POST /api/contact` — contact form payloads
