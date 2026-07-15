@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "postbuild": "next-sitemap"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.6",
+    "@sentry/nextjs": "^7.21.0",
+    "@supabase/supabase-js": "^2.110.3",
+    "dotenv": "^17.4.2",
+    "next": "^13.5.0",
+    "nodemailer": "^9.0.3",
+    "prop-types": "^15.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^13.5.0",
+    "next-sitemap": "^3.0.0"
+  }
+}

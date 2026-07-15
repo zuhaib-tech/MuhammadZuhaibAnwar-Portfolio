@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - '4000:4000'
+    environment:
+      - PORT=4000
+      - CONTACT_RECIPIENT=${CONTACT_RECIPIENT}
+    volumes:
+      - ./backend/messages.json:/app/messages.json
+
+  frontend:
+    build: .
+    ports:
+      - '3000:3000'
+    environment:
+      - NEXT_PUBLIC_API_BASE=http://backend:4000
+    depends_on:
+      - backend
